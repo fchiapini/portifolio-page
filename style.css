@@ -10,14 +10,17 @@
 
   --fw-reg: 300;
   --fw-bold: 900;
-  --clr-light: #fff;
-  --clr-dark: #303030;
+  /* --clr-light: #efede7; */
+  --clr-light: white;
+  --clr-dark: #2a363b;
   --clr-accent: #16e0db;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
+
+  --bs: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 @media (min-width: 800px) {
@@ -40,6 +43,10 @@ body {
   line-height: 1.6;
 }
 
+section {
+  padding: 5em 2em;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -50,7 +57,7 @@ img {
 h1,
 h2,
 h3 {
-  line-height: 1.1;
+  line-height: 1;
   margin: 0;
 }
 
@@ -70,12 +77,46 @@ strong {
   font-weight: var(--fw-bold);
 }
 
+:focus {
+  outline: 3px solid var(--clr-dark);
+  outline-offset: 3px;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 2.5em;
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
 .section__title {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-hi {
+  font-weight: initial;
 }
 
 .section__subtitle--intro {
   font-weight: var(--fw-reg);
+  text-align: center;
+}
+
+.section__title--intro strong {
+  display: block;
 }
 
 .section__subtitle {
@@ -85,8 +126,110 @@ strong {
 
 .section__subtitle--intro,
 .section__subtitle--about {
-  background: var(--clr-accent);
+  /* background: var(--clr-accent); */
+  border-style: solid;
+  border-width: thin;
+  border-color: rgba(0, 0, 0, 0.5);
+  padding: 0.25em;
   font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+}
+
+/* Intro section */
+.intro {
+  position: relative;
+}
+
+@media (min-width: 600px) {
+  .intro {
+    width: max-content;
+    margin: 0 auto;
+  }
+}
+
+.section__subtitle--intro {
+  align-self: start;
+}
+
+.my-services {
+  text-align: center;
+}
+
+.section__title--services {
+  position: relative;
+}
+
+.section__title--services::after {
+  content: '';
+  display: block;
+  width: 3em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-dark);
+  opacity: 0.5;
+}
+
+.services {
+  margin-bottom: 4em;
+}
+
+.service {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .services {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service + .service {
+    margin-left: 2em;
+  }
+}
+
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-me__img {
+  box-shadow: var(--bs);
+}
+
+@media (min-width: 600px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-areas:
+      'title img'
+      'subtitle img'
+      'text img';
+    grid-column-gap: 2em;
+  }
+
+  .section__title--about {
+    grid-area: title;
+  }
+
+  .section__subtitle--about {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(400px + 4em);
+  }
+
+  .about-me__img {
+    grid-area: img;
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .nav {
