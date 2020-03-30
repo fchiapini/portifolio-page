@@ -20,6 +20,7 @@
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
   --fs-nav: 1rem;
+  --fs-footer-copyright: 0.5em;
 
   --bs: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
@@ -79,7 +80,7 @@ strong {
 }
 
 :focus {
-  outline: 3px solid var(--clr-light);
+  outline: 3px solid var(--clr-dark);
   outline-offset: 3px;
 }
 
@@ -228,6 +229,48 @@ strong {
   }
 }
 
+/* My work */
+.my-work {
+  text-align: center;
+  border-style: solid;
+  border-width: thin;
+  border-color: var(--clr-dark);
+}
+
+.portifolio {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.portifolio__item {
+  border-style: solid;
+  border-width: thin;
+  border-color: var(--clr-dark);
+  width: 300px;
+}
+
+.portifolio__item__title {
+  font-weight: var(--fw-med);
+}
+
+.tool-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 2em 0 0;
+  padding: 0;
+}
+
+.tool-list__item {
+  font-size: var(--fs-h2);
+}
+
+.tool-list__img {
+  height: 50px;
+  width: 50px;
+}
+
 .nav,
 .footer {
   background: var(--clr-light);
@@ -236,7 +279,18 @@ strong {
 }
 
 .footer {
+  margin-top: 3em;
   font-size: var(--fs-h3);
+}
+
+.footer__link,
+.footer p {
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.05em;
+}
+
+.footer p {
+  font-size: var(--fs-footer-copyright);
 }
 
 .nav {
@@ -268,14 +322,10 @@ strong {
 }
 
 .nav a,
-.footer a {
+.footer a,
+.portifolio a {
   color: inherit;
   text-decoration: none;
-}
-
-.footer__link {
-  font-weight: var(--fw-bold);
-  letter-spacing: 0.05em;
 }
 
 .nav__link:hover,
