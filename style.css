@@ -259,7 +259,7 @@ strong {
   }
 
   .nav__item + .nav__item {
-    margin-left: 2em;
+    margin-left: 3em;
   }
 }
 
