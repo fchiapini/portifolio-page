@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Felipe Chiapini | Vuejs and Javascript developer</title>
+    <title>Felipe Chiapini | Vue.js and Javascript developer</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -21,25 +21,23 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav-link" href="#home">HOME</a></li>
-          <li class="nav__item">
-            <a class="nav__link" href="#services">WHAT I DO</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#about">ABOUT ME</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#work">PORTIFOLIO</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#contact">CONTACT</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#home">HOME</a></li>
+        <li class="nav__item">
+          <a class="nav__link" href="#services">WHAT I DO</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#about">ABOUT ME</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#work">PORTIFOLIO</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
 
     <!-- Introduction -->
     <section class="intro" id="home">
@@ -47,7 +45,7 @@
         <span class="intro-hi">Hi, I am</span> <strong>Felipe Chiapini</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">
-        VUEJS AND JAVASCRIPT DEVELOPER
+        Vue.js and JavaScript developer
       </p>
     </section>
 
@@ -140,36 +138,23 @@
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="social" id="contact">
-      <h1 class="section__title section__title--title">
-        Contact
-      </h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque facilis
-        sapiente sit nihil, commodi minima harum quaerat sed voluptatum
-        consequatur obcaecati tempora vel minus, iure debitis distinctio!
-        Perspiciatis, magni aut.
-      </p>
-    </section>
-
     <!-- Footer -->
-    <footer>
+    <footer class="footer" id="contact">
       <a href="mailto:fchiapini@gmail.com" class="footer__link"
         >fchiapini@gmail.com</a
       >
       <ul class="social-list">
         <li class="social-list__item">
           <a class="social-list__link" href="https://github.com/fchiapini"
-            >GitHub</a
-          >
+            ><i class="fab fa-github"></i
+          ></a>
         </li>
         <li class="social-list__item">
           <a
             class="social-list__link"
             href="https://www.linkedin.com/in/felipechiapini/"
-            >Linkedin</a
-          >
+            ><i class="fab fa-linkedin"></i
+          ></a>
         </li>
       </ul>
     </footer>
