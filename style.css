@@ -231,39 +231,57 @@ strong {
 
 /* My work */
 .my-work {
+  max-width: 1000px;
+  margin: 0 auto;
   text-align: center;
-  border-style: solid;
-  border-width: thin;
-  border-color: var(--clr-dark);
 }
 
-.portifolio {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+@media (min-width: 600px) {
+  .portifolio__item {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-areas:
+      'title img'
+      'text img';
+    grid-column-gap: 2em;
+  }
+
+  .portifolio__item__title {
+    grid-area: title;
+  }
+
+  .portifolio__item__content {
+    grid-area: text;
+    grid-row: 2;
+  }
+
+  .portifolio__item__img {
+    grid-area: img;
+  }
 }
 
 .portifolio__item {
-  border-style: solid;
-  border-width: thin;
-  border-color: var(--clr-dark);
-  width: 300px;
+  margin-top: 2em;
 }
 
 .portifolio__item__title {
   font-weight: var(--fw-med);
 }
 
+.portifolio__item__content {
+  margin-bottom: 2em;
+}
+
 .tool-list {
   list-style: none;
   display: flex;
-  justify-content: space-around;
-  margin: 2em 0 0;
+  justify-content: center;
   padding: 0;
 }
 
 .tool-list__item {
   font-size: var(--fs-h2);
+  margin-right: 1em;
 }
 
 .tool-list__img {
@@ -293,6 +311,7 @@ strong {
   font-size: var(--fs-footer-copyright);
 }
 
+/* Navigation bar */
 .nav {
   font-weight: var(--fw-med);
   font-size: var(--fs-nav);
@@ -322,8 +341,7 @@ strong {
 }
 
 .nav a,
-.footer a,
-.portifolio a {
+.footer a {
   color: inherit;
   text-decoration: none;
 }
