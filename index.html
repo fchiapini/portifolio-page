@@ -152,7 +152,44 @@
           target="_blank”
           rel="noopener">Open App</a>
           </div>
-          <img src="/images/milk.jpg" alt="" class="portifolio__item__img" />
+          <div class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+              <li id="carousel__slide1"
+                  tabindex="0"
+                  class="carousel__slide">
+                  <div class="carousel__snapper">
+                    <a href="#carousel__slide2"
+                       class="carousel__prev">Go to last slide</a>
+                    <a href="#carousel__slide2"
+                       class="carousel__next">Go to next slide</a>
+                  </div>
+                  <img src="/images/screenshot1.png" alt="" class="portifolio__item__img" />
+              </li>
+              <li id="carousel__slide2"
+                  tabindex="0"
+                  class="carousel__slide">
+                  <div class="carousel__snapper">
+                    <a href="#carousel__slide1"
+                       class="carousel__prev">Go to last slide</a>
+                    <a href="#carousel__slide1"
+                       class="carousel__next">Go to next slide</a>
+                  </div>
+                  <img src="/images/screenshot2.png" alt="" class="portifolio__item__img" />
+              </li>
+            </ol>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide1"
+                     class="carousel__navigation-button">Go to slide 1</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide2"
+                     class="carousel__navigation-button">Go to slide 2</a>
+                </li>
+              </ol>
+            </aside>
+          </div>
         </div>
       </div>
     </section>
