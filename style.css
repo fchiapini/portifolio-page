@@ -327,14 +327,14 @@ li {
   font-size: var(--fs-h3);
 }
 
-.footer__link,
-.footer p {
+.footer__link {
   font-weight: var(--fw-bold);
   letter-spacing: 0.05em;
 }
 
-.footer p {
+.footer__text {
   font-size: var(--fs-footer-copyright);
+  letter-spacing: 0.1em;
 }
 
 /* Navigation bar */
