@@ -36,7 +36,7 @@
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
-  --fs-nav: 1rem;
+  --fs-nav: 0.9rem;
   --fs-footer-copyright: 0.5em;
 
   --bs: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -112,6 +112,8 @@ li {
 
 .btn {
   display: inline-block;
+  width: 200px;
+  margin-bottom: 1em;
   padding: 0.5em 2.5em;
   background: var(--clr-light);
   color: var(--clr-dark);
@@ -133,7 +135,7 @@ li {
 
 .section__subtitle--intro {
   font-weight: var(--fw-reg);
-  text-align: center;
+  /* text-align: center; */
 }
 
 .section__title--intro strong {
