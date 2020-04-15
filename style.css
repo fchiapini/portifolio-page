@@ -172,48 +172,6 @@ li {
   align-self: start;
 }
 
-/* What I do section */
-.my-services {
-  text-align: center;
-}
-
-.section__title--services {
-  position: relative;
-}
-
-.section__title--services::after,
-.section__title--work::after {
-  content: '';
-  display: block;
-  width: 3em;
-  height: 1px;
-  margin: 0.5em auto 1em;
-  background: var(--clr-light);
-  opacity: 0.5;
-}
-
-.services {
-  margin-bottom: 4em;
-}
-
-.service {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-@media (min-width: 800px) {
-  .services {
-    display: flex;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .service + .service {
-    margin-left: 2em;
-  }
-}
-
 /* About me */
 .about-me {
   max-width: 1000px;
@@ -257,6 +215,16 @@ li {
 }
 
 /* My work */
+.section__title--work::after {
+  content: '';
+  display: block;
+  width: 3em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-light);
+  opacity: 0.5;
+}
+
 .my-work {
   max-width: 1250px;
   margin: 0 auto;
