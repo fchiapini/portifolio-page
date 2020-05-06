@@ -266,8 +266,7 @@ li {
   align-self: start;
 }
 
-.section__subtitle--intro,
-.about-me__img {
+.section__subtitle--intro {
   animation: moveInRight 1s ease-out;
 }
 
