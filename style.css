@@ -384,7 +384,7 @@ li {
 
 .tool-list__item {
   font-size: var(--fs-h2);
-  margin-right: 1em;
+  margin-right: 0.3em;
 }
 
 .tool-list__img {
