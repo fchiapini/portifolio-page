@@ -1,211 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163764663-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-163764663-1');
-    </script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163764663-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Passionate about JavaScript, sharing and learning Web technologies."/>
-    <link rel="icon" href="/images/favicon.ico" />
+    gtag('config', 'UA-163764663-1');
+  </script>
 
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:title" content="Felipe Chiapini | JavaScript and Vue.js developer" />
-    <meta property="og:description" content="Passionate about JavaScript, sharing and learning Web technologies." />
-    <meta property="og:url" content="https://www.felipechiapini.com/" />
-    <meta property="og:image" content="/images/felipe.jpg" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Passionate about JavaScript, sharing and learning Web technologies." />
+  <link rel="icon" href="/images/favicon.ico" />
 
-    <title>Felipe Chiapini | JavaScript and Vue.js developer</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Felipe Chiapini | JavaScript and Vue.js developer" />
+  <meta property="og:description" content="Passionate about JavaScript, sharing and learning Web technologies." />
+  <meta property="og:url" content="https://www.felipechiapini.com/" />
+  <meta property="og:image" content="/images/felipe.jpg" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:400,600,900&display=swap"
-      rel="stylesheet"
-    />
+  <title>Felipe Chiapini | JavaScript and Vue.js developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" href="#home">home</a></li>
-        <li class="nav__item">
-          <a class="nav__link" href="#about">about me</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#work">My work</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#contact">contact</a>
-        </li>
-      </ul>
-    </nav>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:400,600,900&display=swap" rel="stylesheet" />
 
-    <!-- Introduction -->
-    <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
-        <span class="intro-hi">Hi, I am</span> <strong>Felipe Chiapini</strong>
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">
-        Front-end and JavaScript developer
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item"><a class="nav__link" href="#home">home</a></li>
+      <li class="nav__item">
+        <a class="nav__link" href="#about">about me</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#work">My work</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#contact">contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Introduction -->
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      <span class="intro-hi">Hi, I am</span> <strong>Felipe Chiapini</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">
+      Front-end and JavaScript developer
+    </p>
+  </section>
+
+  <!-- About me -->
+  <section class="about-me" id="about">
+    <h2 class="section__title section__title--about">
+      Who I am
+    </h2>
+    <p class="section__subtitle section__subtitle--about">
+      Front-end developer based in Tokyo
+    </p>
+
+    <div class="about-me__body">
+      <p>
+        I am Brazilian and newly-married who recently moved to Japan. Currently working on my blog to share and learn by
+        teaching about JavaScript and Web technologies.
       </p>
-    </section>
-
-    <!-- About me -->
-    <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">
-        Who I am
-      </h2>
-      <p class="section__subtitle section__subtitle--about">
-        Front-end developer based in Tokyo
+      <p>
+        Hobbies: Soccer, Cycling, Keyboard (I want to play it again), currently enjoying listening to Jazz and Brazilian
+        Bossa Nova.
       </p>
+    </div>
+    <img src="/images/felipe.jpg" alt="Man holding an umbrella in front of a cafeteria" class="about-me__img" />
+  </section>
 
-      <div class="about-me__body">
-        <p>
-          I am Brazilian and newly-married who recently moved to Japan. Currently working on my blog to share and learn by teaching about JavaScript and Web technologies.
-        </p>
-        <p>
-          Hobbies: Soccer, Cycling, Keyboard (I want to play it again), currently enjoying listening to Jazz and Brazilian Bossa Nova.
-        </p>
-      </div>
-      <img src="/images/felipe.jpg" alt="Man holding an umbrella in front of a cafeteria" class="about-me__img" />
-    </section>
+  <!-- My work -->
+  <section class="my-work" id="work">
+    <h2 class="section__title section__title--work">
+      My work
+    </h2>
 
-    <!-- My work -->
-    <section class="my-work" id="work">
-      <h2 class="section__title section__title--work">
-        My work
-      </h2>
-
-      <div class="portifolio">
-        <div class="portifolio__item">
-          <h3 class="portifolio__item__title">
-            Personal Finance Web App
-          </h3>
-          <div class="portifolio__item__content">
-            <p>
-              Create your monthly budget.
-            </p>
-            <p>
-              Web application built using JavaScript, Vue.js, Vuetify and Firebase (Authentication and Firestore as database).
-            </p>
-            <ul class="tool-list">
-              <li class="tool-list__item">
-                <img class="tool-list__img" src="/images/js.png" alt="" />
-              </li>
-              <li class="tool-list__item">
-                <img class="tool-list__img" src="/images/vuejs.png" alt="" />
-              </li>
-              <li class="tool-list__item">
-                <img class="tool-list__img" src="/images/firebase.png" alt="" />
-              </li>
-            </ul>
-            <a class="btn" href="https://fir-app-3e66a.firebaseapp.com"
-          target="_blank”
-          rel="noopener">Open app</a>
-          <a class="btn" href="https://github.com/fchiapini/personal-finance-app"
-          target="_blank”
-          rel="noopener"><i class="fab fa-github"></i
-            >View code</a>
-          </div>
-          <div class="carousel" aria-label="Gallery">
-            <ol class="carousel__viewport">
-              <li id="carousel__slide1"
-                  tabindex="0"
-                  class="carousel__slide">
-                  <div class="carousel__snapper">
-                    <a href="#carousel__slide3"
-                       class="carousel__prev">Go to last slide</a>
-                    <a href="#carousel__slide2"
-                       class="carousel__next">Go to next slide</a>
-                  </div>
-                  <img src="/images/screenshot1.png" alt="" class="portifolio__item__img" />
-              </li>
-              <li id="carousel__slide2"
-                  tabindex="0"
-                  class="carousel__slide">
-                  <div class="carousel__snapper">
-                    <a href="#carousel__slide1"
-                       class="carousel__prev">Go to last slide</a>
-                    <a href="#carousel__slide3"
-                       class="carousel__next">Go to next slide</a>
-                  </div>
-                  <img src="/images/screenshot2.png" alt="" class="portifolio__item__img" />
-              </li>
-              <li id="carousel__slide3"
-                  tabindex="0"
-                  class="carousel__slide">
-                  <div class="carousel__snapper">
-                    <a href="#carousel__slide2"
-                       class="carousel__prev">Go to last slide</a>
-                    <a href="#carousel__slide1"
-                       class="carousel__next">Go to next slide</a>
-                  </div>
-                  <img src="/images/screenshot3.png" alt="" class="portifolio__item__img" />
-              </li>
-            </ol>
-            <aside class="carousel__navigation">
-              <ol class="carousel__navigation-list">
-                <li class="carousel__navigation-item">
-                  <a href="#carousel__slide1"
-                     class="carousel__navigation-button">Go to slide 1</a>
-                </li>
-                <li class="carousel__navigation-item">
-                  <a href="#carousel__slide2"
-                     class="carousel__navigation-button">Go to slide 2</a>
-                </li>
-                <li class="carousel__navigation-item">
-                  <a href="#carousel__slide3"
-                     class="carousel__navigation-button">Go to slide 3</a>
-                </li>
-              </ol>
-            </aside>
+    <div class="portifolio">
+      <div class="portifolio__item">
+        <h3 class="portifolio__item__title">
+          Personal Finance Web App
+        </h3>
+        <div class="portifolio__item__content">
+          <p>
+            Create your monthly budget.
+          </p>
+          <p>
+            Web application built using JavaScript, Vue.js, Vuetify and Firebase (Authentication and Firestore as
+            database).
+          </p>
+          <ul class="tool-list">
+            <li class="tool-list__item">
+              <img class="tool-list__img" src="/images/js.png" alt="" />
+            </li>
+            <li class="tool-list__item">
+              <img class="tool-list__img" src="/images/vuejs.png" alt="" />
+            </li>
+            <li class="tool-list__item">
+              <img class="tool-list__img" src="/images/firebase.png" alt="" />
+            </li>
+          </ul>
+          <div class="portifolio__item__content--link">
+            <a class="btn" href="https://fir-app-3e66a.firebaseapp.com" target="_blank” rel=" noopener">Open app</a>
+            <a class="btn" href="https://github.com/fchiapini/personal-finance-app" target="_blank” rel=" noopener"><i
+                class="fab fa-github"></i>View code</a>
           </div>
         </div>
+        <div class="carousel" aria-label="Gallery">
+          <ol class="carousel__viewport">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide3" class="carousel__prev">Go to last slide</a>
+                <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+              </div>
+              <img src="/images/screenshot1.png" alt="" class="portifolio__item__img" />
+            </li>
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide1" class="carousel__prev">Go to last slide</a>
+                <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+              </div>
+              <img src="/images/screenshot2.png" alt="" class="portifolio__item__img" />
+            </li>
+            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide2" class="carousel__prev">Go to last slide</a>
+                <a href="#carousel__slide1" class="carousel__next">Go to next slide</a>
+              </div>
+              <img src="/images/screenshot3.png" alt="" class="portifolio__item__img" />
+            </li>
+          </ol>
+          <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+              </li>
+            </ol>
+          </aside>
+        </div>
       </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer" id="contact">
-      <a href="mailto:fchiapini@gmail.com" class="footer__link"
-        >fchiapini@gmail.com</a
-      >
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://github.com/fchiapini"
-          target="_blank”
-          rel="noopener"
-            ><i class="fab fa-github"></i
-          ></a>
-        </li>
-        <li class="social-list__item">
-          <a
-            class="social-list__link"
-            href="https://www.linkedin.com/in/felipechiapini/"
-            target="_blank”
-            rel="noopener"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </li>
-      </ul>
-      <p class="footer__text">
-        Felipe Chiapini &copy;2020
-      </p>
-    </footer>
-  </body>
+      <div class="portifolio__item">
+        <h3 class="portifolio__item__title">
+          MyTube
+        </h3>
+        <div class="portifolio__item__content">
+          <p>
+            Curated of Youtube videos to learn new skills
+          </p>
+          <p>
+            Web application built using Vue.js, Nuxt.js, Youtube API, Vuetify and Firebase functions.
+          </p>
+          <ul class="tool-list">
+            <li class="tool-list__item">
+              <img class="tool-list__img" src="/images/js.png" alt="" />
+            </li>
+            <li class="tool-list__item">
+              <img class="tool-list__img" src="/images/vuejs.png" alt="" />
+            </li>
+            <li class="tool-list__item">
+              <img class="tool-list__img" src="/images/firebase.png" alt="" />
+            </li>
+            <li class="tool-list__item">
+              <img class="tool-list__img" src="/images/youtube.png" alt="" />
+            </li>
+          </ul>
+          <div class="portifolio__item__content--link">
+            <a class="btn" href="https://evening-reaches-01206.herokuapp.com/" target="_blank”
+            rel=" noopener">Open app</a>
+            <a class="btn" href="https://github.com/fchiapini/myTube" target="_blank”
+          rel=" noopener"><i class="fab fa-github"></i>View code</a>
+          </div>
+        </div>
+        <div class="carousel" aria-label="Gallery">
+          <ol class="carousel__viewport">
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide5" class="carousel__next">Go to next slide</a>
+              </div>
+              <img src="/images/myTube_screenshot1.png" alt="" class="portifolio__item__img" />
+            </li>
+            <li id="carousel__slide5" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+              </div>
+              <img src="/images/myTube_screenshot2.png" alt="" class="portifolio__item__img" />
+            </li>
+          </ol>
+          <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 1</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide5" class="carousel__navigation-button">Go to slide 2</a>
+              </li>
+            </ol>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <a href="mailto:fchiapini@gmail.com" class="footer__link">fchiapini@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://github.com/fchiapini" target="_blank”
+          rel=" noopener"><i class="fab fa-github"></i></a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.linkedin.com/in/felipechiapini/" target="_blank”
+            rel=" noopener"><i class="fab fa-linkedin"></i></a>
+      </li>
+    </ul>
+    <p class="footer__text">
+      Felipe Chiapini &copy;2020
+    </p>
+  </footer>
+</body>
+
 </html>

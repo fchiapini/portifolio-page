@@ -135,7 +135,6 @@ li {
 
 .section__subtitle--intro {
   font-weight: var(--fw-reg);
-  /* text-align: center; */
 }
 
 .section__title--intro strong {
@@ -225,12 +224,17 @@ li {
   margin: 0.5em auto 1em;
   background: var(--clr-light);
   opacity: 0.5;
+  text-align: center;
+}
+
+.section__title--work,
+.portifolio__item__content--link {
+  text-align: center;
 }
 
 .my-work {
   max-width: 1250px;
   margin: 0 auto;
-  text-align: center;
 }
 
 @media (min-width: 600px) {
@@ -259,6 +263,7 @@ li {
 
 .portifolio__item {
   margin-top: 2em;
+  margin-bottom: 6em;
 }
 
 .portifolio__item__title {
@@ -267,6 +272,10 @@ li {
 
 .portifolio__item__content {
   margin-bottom: 2em;
+}
+
+.portifolio__item__content--link {
+  text-align: center;
 }
 
 .tool-list {
@@ -282,8 +291,8 @@ li {
 }
 
 .tool-list__img {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }
 
 .nav,
