@@ -258,12 +258,19 @@ li {
   }
 }
 
-.section__title--intro {
+.section__title--intro,
+.section__title--about,
+.about-me__body {
   animation: moveInLeft 1s ease-out;
 }
 
 .section__subtitle--intro {
   align-self: start;
+}
+
+.section__subtitle--intro,
+.section__subtitle--about,
+.about-me__img {
   animation: moveInRight 1s ease-out;
 }
 
