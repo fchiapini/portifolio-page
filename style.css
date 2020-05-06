@@ -258,9 +258,7 @@ li {
   }
 }
 
-.section__title--intro,
-.section__title--about,
-.about-me__body {
+.section__title--intro {
   animation: moveInLeft 1s ease-out;
 }
 
