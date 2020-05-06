@@ -108,6 +108,95 @@ li {
   outline-offset: 3px;
 }
 
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* Navigation bar */
+.nav {
+  font-weight: var(--fw-med);
+  font-size: var(--fs-nav);
+}
+
+.nav__list {
+  list-style: none;
+  justify-content: center;
+  text-transform: uppercase;
+  margin: 2em 0 0;
+  padding: 0;
+  letter-spacing: 0.1em;
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+@media (min-width: 600px) {
+  .nav__list {
+    display: flex;
+  }
+
+  .nav__item + .nav__item {
+    margin-left: 3em;
+  }
+}
+
+.nav__item {
+  margin: 0 0 2em 0;
+}
+
+.nav a,
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav__link:hover,
+.btn:hover,
+.footer__link:hover,
+.social-list__link:hover {
+  transition: opacity 200ms ease-in-out;
+  opacity: 0.25;
+}
+
 /* Buttons */
 
 .btn {
@@ -169,8 +258,13 @@ li {
   }
 }
 
+.section__title--intro {
+  animation: moveInLeft 1s ease-out;
+}
+
 .section__subtitle--intro {
   align-self: start;
+  animation: moveInRight 1s ease-out;
 }
 
 /* About me */
@@ -315,49 +409,6 @@ li {
 .footer__text {
   font-size: var(--fs-footer-copyright);
   letter-spacing: 0.1em;
-}
-
-/* Navigation bar */
-.nav {
-  font-weight: var(--fw-med);
-  font-size: var(--fs-nav);
-}
-
-.nav__list {
-  list-style: none;
-  justify-content: center;
-  text-transform: uppercase;
-  margin: 2em 0 0;
-  padding: 0;
-  letter-spacing: 0.1em;
-}
-
-@media (min-width: 600px) {
-  .nav__list {
-    display: flex;
-  }
-
-  .nav__item + .nav__item {
-    margin-left: 3em;
-  }
-}
-
-.nav__item {
-  margin: 0 0 2em 0;
-}
-
-.nav a,
-.footer a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.nav__link:hover,
-.btn:hover,
-.footer__link:hover,
-.social-list__link:hover {
-  transition: opacity 200ms ease-in-out;
-  opacity: 0.25;
 }
 
 .footer__link:hover {
